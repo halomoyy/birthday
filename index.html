@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Selamat Ulang Tahun, Cintaku ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== OPENING SCREEN ===== -->
+  <div id="opening-screen">
+    <canvas id="opening-canvas"></canvas>
+    <div class="opening-content">
+      <div class="opening-icon">✦</div>
+      <p class="opening-pre">untuk kamu, dengan sepenuh hati</p>
+      <h1 class="opening-title">Meita Aku punya sesuatu<br/>untuk kamu <span class="heart-inline">❤️</span></h1>
+      <p class="opening-sub">Spesial buat gemoyyy!!!</br>Klik tombol dibawah ya moy</p>
+      <button id="open-btn" class="open-btn">
+        <span class="btn-text">Buka Kejutan</span>
+        <span class="btn-shimmer"></span>
+      </button>
+    </div>
+    <div class="opening-petals" id="opening-petals"></div>
+  </div>
+
+  <!-- ===== MAIN WEBSITE ===== -->
+  <div id="main-site" class="hidden">
+
+    <!-- MUSIC CONTROL -->
+    <button id="music-btn" class="music-btn" title="Musik">
+      <span id="music-icon">♪</span>
+    </button>
+
+    <!-- CANVAS for hearts/confetti -->
+    <canvas id="main-canvas"></canvas>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section id="hero" class="section hero-section">
+      <div class="hero-bg-gradient"></div>
+      <div class="floating-hearts-bg" id="floating-hearts-bg"></div>
+      <div class="hero-content">
+        <div class="hero-ornament">✦ — ✦</div>
+        <h1 class="hero-title">Selamat Ulang Tahun,<br/><em>Meita Ambarwati</em> ❤️</h1>
+        <div class="typing-container">
+          <p class="typing-text" id="typing-text"></p>
+          <span class="typing-cursor">|</span>
+        </div>
+        <div class="hero-scroll-hint">
+          <span>scroll ke bawah</span>
+          <div class="scroll-arrow">↓</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ROMANTIC MESSAGE SECTION ===== -->
+    <section id="message" class="section message-section">
+      <div class="container">
+        <div class="section-label reveal">— pesan untukmu —</div>
+        <h2 class="section-title reveal">Dari Aku 'Dimas'<br/><em>Untuk Meita 'Gemoy'</em></h2>
+        <div class="message-card reveal">
+          <div class="message-card-inner">
+            <div class="message-deco">❝</div>
+            <div class="message-text">
+             <p>Hari ini ulang tahun kamu 🙂</p>
+             <p>Jujur aku ga bisa bikin kata-kata moy. Tapi aku cuma mau bilang....</p>
+             <p>Aku senang bisa kenal kamu, Di umur kamu yang sekarang, semoga kamu selalu sehat, lebih bahagia, dan semua hal baik pelan-pelan datang ke hidup kamu yaa.</p>
+             <p>Terima kasih sudah jadi kamu. Dan terima kasih buat segalanya.</p>
+             <p>Selamat ulang tahun moyy ❤️</p>
+            </div>
+            <div class="message-sign">— Dimas ✦</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PHOTO GALLERY SECTION ===== -->
+    <section id="gallery" class="section gallery-section">
+      <div class="container">
+        <div class="section-label reveal">— Kumpulan pipi gemoy —</div>
+        <h2 class="section-title reveal">Foto Yang Masih Aku Simpan <span class="emoji-title">📸</span></h2>
+        <p class="section-sub reveal">Setiap foto menyimpan satu cerita yang ingin kuingat selamanya</p>
+        <div class="gallery-grid" id="gallery-grid">
+          <!-- Photos injected by JS -->
+        </div>
+      </div>
+      <!-- MODAL -->
+      <div id="photo-modal" class="photo-modal hidden">
+        <div class="modal-overlay" id="modal-overlay"></div>
+        <div class="modal-content">
+          <button class="modal-close" id="modal-close">✕</button>
+          <button class="modal-nav modal-prev" id="modal-prev">‹</button>
+          <div class="modal-img-wrap">
+            <img id="modal-img" src="" alt="Kenangan" />
+            <div class="modal-caption" id="modal-caption"></div>
+          </div>
+          <button class="modal-nav modal-next" id="modal-next">›</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== LOVE TIMELINE SECTION ===== -->
+    <!-- <section id="timeline" class="section timeline-section">
+      <div class="container">
+        <div class="section-label reveal">— perjalanan kita —</div>
+        <h2 class="section-title reveal">Kisah Kita<br/><em>Yang Indah</em></h2>
+        <div class="timeline-wrapper">
+          <div class="timeline-line"></div>
+          <div class="timeline-items" id="timeline-items"> -->
+            <!-- Injected by JS -->
+          <!-- </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- ===== SURPRISE BUTTON SECTION ===== -->
+    <section id="surprise" class="section surprise-section">
+      <div class="surprise-glow" id="surprise-glow"></div>
+      <div class="container">
+        <div class="surprise-content">
+          <div class="section-label reveal">— satu lagi —</div>
+          <h2 class="section-title reveal">Masih Ada<br/><em>Kejutan Buat Kamu</em></h2>
+          <p class="section-sub reveal">Penasaran ga moyyyy??? 😊</p>
+          <button id="surprise-btn" class="surprise-btn reveal">
+            <span class="surprise-btn-inner">
+              Klik tombol bawah ini ya 🎁
+            </span>
+          </button>
+          <div id="surprise-message" class="surprise-message hidden">
+            <div class="surprise-card">
+              <div class="surprise-hearts-anim" id="surprise-hearts-anim"></div>
+              <div class="surprise-deco">✦</div>
+              <h3>Satu Hal Yang Perlu Kamu Tahu</h3>
+              <p>Aku tidak tahu kapan kita pertama kali jatuh cinta, atau persis momen apa yang membuat segalanya berubah. Tapi aku tahu satu hal dengan pasti:</p>
+              <p><em>Memilihmu adalah keputusan terbaik yang pernah aku buat.</em></p>
+              <p>Dan aku akan terus memilihmu, setiap hari, tanpa ragu.</p>
+              <p>Happy birthday, belahan jiwaku. 💕</p>
+              <div class="surprise-signature">— selalu dan selamanya, untukmu ✦</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CLOSING SECTION ===== -->
+    <section id="closing" class="section closing-section">
+      <div class="closing-bg"></div>
+      <div class="container">
+        <div class="closing-content reveal">
+          <div class="closing-ornament">✦ ❤️ ✦</div>
+          <h2 class="closing-title">Terima kasih sudah<br/><em>hadir di hidup aku moyy</em> ❤️</h2>
+          <p class="closing-sub">Semoga hari ini dan setiap hari nya<br/>kamu selalu happy yaa.</p>
+          <p class="closing-year">– Love you gemoy –</p>
+          <button id="replay-btn" class="replay-btn">
+            ↺ Mulai dari Awal
+          </button>
+        </div>
+      </div>
+      <div class="closing-petals" id="closing-petals"></div>
+    </section>
+
+  </div><!-- end #main-site -->
+
+  <!-- AUDIO -->
+  <audio id="bg-music" loop>
+    <!-- 
+      Ganti src di bawah dengan file musik lokal Anda.
+      Letakkan file di: assets/music/romantic.mp3
+      Contoh musik: instrumental piano romantis, atau lagu favorit bersama.
+    -->
+    <source src="assets/music/romantic.mp3" type="audio/mpeg" />
+    <!-- Fallback: gunakan URL musik CDN atau path lokal -->
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
