@@ -20,12 +20,12 @@ const CONFIG = {
   // Ganti 'src' dengan path foto asli kamu, misal: 'assets/images/foto1.jpg'
   // Jika tidak ada foto, website akan menampilkan placeholder emoji cantik
   photos: [
-    { src: null, emoji: '🌸', caption: 'Momen pertama kita ketemu — hatiku langsung tahu' },
-    { src: null, emoji: '🌙', caption: 'Malam yang tidak pernah aku lupakan' },
-    { src: null, emoji: '☕', caption: 'Coffee date favorit kita' },
-    { src: null, emoji: '🌊', caption: 'Petualangan kecil kita bersama' },
-    { src: null, emoji: '🌹', caption: 'Hadiah yang membuatmu tersenyum' },
-    { src: null, emoji: '✨', caption: 'Saat bahagia paling sederhana' },
+    { src: 'assets/moy1.jpg', emoji: '🌸', caption: 'Momen pertama kita ketemu — hatiku langsung tahu' },
+    { src: 'assets/moy2.jpg', emoji: '🌙', caption: 'Malam yang tidak pernah aku lupakan' },
+    { src: 'assets/moy3.jpg', emoji: '☕', caption: 'Coffee date favorit kita' },
+    { src: 'assets/moy4.jpg', emoji: '🌊', caption: 'Petualangan kecil kita bersama' },
+    { src: 'assets/moy5.jpg', emoji: '🌹', caption: 'Hadiah yang membuatmu tersenyum' },
+    { src: 'assets/moy6.jpg', emoji: '✨', caption: 'Saat bahagia paling sederhana' },
   ],
 
   // Timeline perjalanan cinta
